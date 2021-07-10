@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/posts/css2/" />
-  <link rel="canonical" href="https://www.liubeike.com/posts/css2/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/css3/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/css3/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -19,9 +19,9 @@
            "@id": "https:\/\/www.liubeike.com"
       },
       "articleSection" : "posts",
-      "name" : "CSS入门2",
-      "headline" : "CSS入门2",
-      "description" : "flex 布局重点属性  display:flex \/\/让一个元素变成 flex 容器 flex-direction:row\/column \/\/改变 items 主轴流动方向 flex-wrap:wrap \/\/改变折行 just-content:center\/space-between \/\/改变主轴对齐方向 align-items:center \/\/改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文  要记住处在同一个层叠上下文中的 z-index 才能做比较  ",
+      "name" : "CSS入门3",
+      "headline" : "CSS入门3",
+      "description" : "浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=\u0026gt;block 没法过渡，一般改成 visibility:hidden=\u0026gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  ",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,15 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-09 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-09 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/posts\/css2\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/css3\/",
       "keywords" : [  ]
   }
 </script>
-<title>CSS入门2</title>
-  <meta property="og:title" content="CSS入门2" />
+<title>CSS入门3</title>
+  <meta property="og:title" content="CSS入门3" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文  要记住处在同一个层叠上下文中的 z-index 才能做比较  " />
-  <meta name="description" content="flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文  要记住处在同一个层叠上下文中的 z-index 才能做比较  " />
+  <meta property="og:description" content="浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  " />
+  <meta name="description" content="浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  " />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -88,7 +88,7 @@
 
         </div>
         <header class="post-header">
-          <h1 class="post-title">CSS入门2</h1>
+          <h1 class="post-title">CSS入门3</h1>
           
           <div class="row post-desc">
             <div class="col-xs-6">
@@ -107,26 +107,39 @@
 
         <div class="post-content markdown-body">
           
-          <h2 id="flex-布局重点属性">flex 布局重点属性</h2>
+          <h2 id="浏览器渲染原理">浏览器渲染原理</h2>
+<ol>
+<li>根据 HTML 构建 HTML 树（DOM）</li>
+<li>根据 CSS 构建 CSS 树（CSSOM）</li>
+<li>将两颗树合并成一颗渲染树（render tree）</li>
+<li>Layout 布局（文档流、盒模型、计算大小和位置）</li>
+<li>Paint 绘制（把边框颜色、文字颜色、阴影等画出来）</li>
+<li>Compose 合成（根据层叠关系展示画面）</li>
+</ol>
+<h2 id="css-动画的两种做法">CSS 动画的两种做法</h2>
+<h3 id="transition">transition</h3>
 <ul>
-<li>display:flex //让一个元素变成 flex 容器</li>
-<li>flex-direction:row/column //改变 items 主轴流动方向</li>
-<li>flex-wrap:wrap //改变折行</li>
-<li>just-content:center/space-between //改变主轴对齐方向</li>
-<li>align-items:center //改变次轴对齐方向</li>
+<li>translate 位移</li>
+<li>scanle 缩放</li>
+<li>rotate 旋转</li>
+<li>skew 倾斜</li>
 </ul>
-<h2 id="一个-div-的分层">一个 div 的分层</h2>
-<p><img src="/images/div-fenceng.png" alt="div-fenceng"></p>
-<h2 id="position-重点属性">position 重点属性</h2>
+<h4 id="经验之谈">经验之谈</h4>
 <ul>
-<li>static 默认值，待在文档流里</li>
-<li>relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸</li>
-<li>absolute 绝对定位，定位基准是祖先里的非 static</li>
-<li>经验之谈：如果写了 absolute 一定要补 top 和 left</li>
+<li>一般都需要配合 transition 过渡</li>
+<li>inline 元素不支持 transform，需要先变成 block</li>
+<li>translate(-50%,-50%)可做绝对定位元素的居中</li>
+<li>display：none=&gt;block 没法过渡，一般改成 visibility:hidden=&gt;visible</li>
 </ul>
-<h2 id="层叠上下文">层叠上下文</h2>
+<h3 id="animation">animation</h3>
 <ul>
-<li>要记住处在同一个层叠上下文中的 z-index 才能做比较</li>
+<li>简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向</li>
+<li>animation-name 规定需要绑定到选择器的 keyframe 名称。</li>
+<li>animation-duration 规定完成动画所花费的时间，以秒或毫秒计。</li>
+<li>animation-timing-function 规定动画的速度曲线。</li>
+<li>animation-delay 规定在动画开始之前的延迟。</li>
+<li>animation-iteration-count 规定动画应该播放的次数。</li>
+<li>animation-direction 规定是否应该轮流反向播放动画。</li>
 </ul>
 
         </div>

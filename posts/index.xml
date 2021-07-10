@@ -6,18 +6,9 @@
     <description>Recent content in Posts on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSS入门笔记（二）布局和定位</title>
-      <link>https://www.liubeike.com/posts/css2/</link>
-      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.liubeike.com/posts/css2/</guid>
-      <description>flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文 要记住处在同一个层叠上下文中的 z-index 才能做比较</description>
-    </item>
-    
-    <item>
-      <title>CSS入门笔记（一）</title>
+      <title>CSS入门1</title>
       <link>https://www.liubeike.com/posts/css/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -31,14 +22,32 @@ border 调试法 怀疑某个元素有问题，就给这个元素加 border。 b
     </item>
     
     <item>
-      <title>HTML入门笔记</title>
+      <title>CSS入门2</title>
+      <link>https://www.liubeike.com/posts/css2/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/css2/</guid>
+      <description>flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文  要记住处在同一个层叠上下文中的 z-index 才能做比较  </description>
+    </item>
+    
+    <item>
+      <title>CSS入门3</title>
+      <link>https://www.liubeike.com/posts/css3/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/css3/</guid>
+      <description>浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  </description>
+    </item>
+    
+    <item>
+      <title>HTML入门</title>
       <link>https://www.liubeike.com/posts/html/</link>
       <pubDate>Thu, 08 Jul 2021 00:00:00 +0000</pubDate>
       
       <guid>https://www.liubeike.com/posts/html/</guid>
       <description>超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
 HTML 是谁发明的 蒂姆·伯纳斯-李（英语：Tim Berners-Lee），英国计算机科学家。他是万维网的发明者。1990 年 12 月 25 日，他成功利用互联网实现了超文本传输协议客户端与服务器的第一次通讯。
-HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 常用的表章节的标签有哪些  标题 h1~h6 章节 section 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  全局属性有哪些  class 添加类名，可以加多个，以空格隔开。 contenteditable 用户可以直接在网页编辑元素 hidden 隐藏属性 id 尽量不用 style 设置样式 tabindex 控制 tab 键选中顺序 title 设置鼠标放上去提示文字  常用的内容标签有哪些  ol+li 有序列表 ul+li 无序列表 dl+dt+dd 表格+表头+表内容 pre 保留原始内容 hr 水平线 br 换行符 a 超链接 一般加 target=&amp;quot;_blank&amp;quot; em 强调语气 斜体 strong 强调内容 粗体 code 包裹的内容 字体等宽 quote 行内引用 blockquote 块内引用  重点标签 a 超链接  href 跳转到某个链接 href=#id 伪协议：javascript:;; mailto:邮箱 tel:手机号 target 指定使用哪个窗口打开，一般国内用_blank 使用新的标签打开  table 表格  table 表格根、thead 头部、tbody 身体、tfoot 尾部 tr 表行、td 表数据、th 表头 table 样式： table-layout:auto;//控制表格布局 border-collapse:collapse; //控制边框是否合并 border-spacing:0;//控制边框距离  img 发出一个 get 请求，展示一张图片  alt 加载失败后显示的内容 width、height 设置宽和高，只设置一个可以按比例自适应。 src 图片地址 加载成功可触发 onload 事件，失败可触发 onerror 事件。 响应式样式可设置 max-width:100%  典型的可替换元素有： -典型的可替换元素有 img、object、video 和 表单元素，如 textarea、input。</description>
+HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 常用的表章节的标签有哪些  标题 h1~h6 章节 section 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  全局属性有哪些  class 添加类名，可以加多个，以空格隔开。 contenteditable 用户可以直接在网页编辑元素 hidden 隐藏属性 id 尽量不用 style 设置样式 tabindex 控制 tab 键选中顺序 title 设置鼠标放上去提示文字  常用的内容标签有哪些  ol+li 有序列表 ul+li 无序列表 dl+dt+dd 表格+表头+表内容 pre 保留原始内容 hr 水平线 br 换行符 a 超链接 一般加 target=&amp;quot;_blank&amp;quot; em 强调语气 斜体 strong 强调内容 粗体 code 包裹的内容 字体等宽 quote 行内引用 blockquote 块内引用  重点标签 a 超链接  href 跳转到某个链接 href=#id 伪协议：javascript:;; mailto:邮箱 tel:手机号 target 指定使用哪个窗口打开，一般国内用_blank 使用新的标签打开  table 表格  table 表格根、thead 头部、tbody 身体、tfoot 尾部 tr 表行、td 表数据、th 表头 table 样式： table-layout:auto;//控制表格布局 border-collapse:collapse; //控制边框是否合并 border-spacing:0;//控制边框距离  img 发出一个 get 请求，展示一张图片  alt 加载失败后显示的内容 width、height 设置宽和高，只设置一个可以按比例自适应。 src 图片地址 加载成功可触发 onload 事件，失败可触发 onerror 事件。 响应式样式可设置 max-width:100%  典型的可替换元素有：   典型的可替换元素有 img、object、video 和 表单元素，如 textarea、input。</description>
     </item>
     
   </channel>

@@ -6,18 +6,9 @@
     <description>Recent content in CSS on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/css/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSS入门笔记（二）布局和定位</title>
-      <link>https://www.liubeike.com/posts/css2/</link>
-      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.liubeike.com/posts/css2/</guid>
-      <description>flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文 要记住处在同一个层叠上下文中的 z-index 才能做比较</description>
-    </item>
-    
-    <item>
-      <title>CSS入门笔记（一）</title>
+      <title>CSS入门1</title>
       <link>https://www.liubeike.com/posts/css/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -28,6 +19,24 @@ CSS 是谁发明的？ 在 1994 年 10 月 10 日，CSS 之父 Håkon Wium Lie �
 border 调试法 怀疑某个元素有问题，就给这个元素加 border。 border 没出现，说明选择器或语法错了。 border 出现了，看看边界是否符合预期。 bug 解决后再删掉 border
 速写 n 个元素：span{第$个 span 元素}*8
 文档流 流动方向  inline 元素从左到右，到达最右边才会换行 block 元素从上到下，每一个都另起一行 inline-block 从左到右，但不会把一个元素分隔在上下两行  宽度  inline 宽度为内部 inline 元素的和，不能用 width 指定 block 默认自动计算宽度，可用 width 指定 inline-block 结合前两者特点，可用 width  高度  inline 高度由 line-height 间接确定，跟 height 无关 block 高度由内部文档流元素决定，可以设 height inline-block 跟 block 类似，可以设置 height  溢出  overflow: hidden: 隐藏溢出内容 overflow: scroll: 显示滚动条，如果内容宽度和高度没有溢出，也会有滚动条 Overflow: auto: 灵活地显示滚动条，只有在需要的时候才会出现滚动条  脱离文档流  position: absolute float: left  盒模型 两种盒模型  content-box 内容盒 内容就是盒子的边界 border-box 边框盒 边框才是盒子的边界  公式  content-box width=内容宽度 border-box width=内容宽度+padding+border  margin 合并  父子 margin 会合并，兄弟 margin 会合并。  如何阻止合并  父子合并用 padding/border/overflow:hidden/display:flex 兄弟合并用 inline-block  基本长度单位  px 像素 em 相对于自身 font-size 的倍数 百分数 整数  颜色  #ff6600 或#f60 rgb(0,0,0)或 rgba(0,0,0,1) hsl(360,100%,100%)  </description>
+    </item>
+    
+    <item>
+      <title>CSS入门2</title>
+      <link>https://www.liubeike.com/posts/css2/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/css2/</guid>
+      <description>flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文  要记住处在同一个层叠上下文中的 z-index 才能做比较  </description>
+    </item>
+    
+    <item>
+      <title>CSS入门3</title>
+      <link>https://www.liubeike.com/posts/css3/</link>
+      <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/css3/</guid>
+      <description>浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  </description>
     </item>
     
   </channel>
