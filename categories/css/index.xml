@@ -8,11 +8,11 @@
     <language>zh-CN</language>
     <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/css/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSS入门1</title>
-      <link>https://www.liubeike.com/posts/css/</link>
+      <title>CSS知识总结1</title>
+      <link>https://www.liubeike.com/posts/css-01/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.liubeike.com/posts/css/</guid>
+      <guid>https://www.liubeike.com/posts/css-01/</guid>
       <description>层叠样式表(Cascading Style Sheets，缩写为 CSS），是一种样式表语言，用来描述 HTML 或 XML（包括如 SVG、MathML、XHTML 之类的 XML 分支语言）文档的呈现。
 CSS 是谁发明的？ 在 1994 年 10 月 10 日，CSS 之父 Håkon Wium Lie 提出了 CSS 的最初建议，并且在芝加哥的一次会议上正式提出了 CSS 。
 浏览器支持查询方式 caniuse.com 输入你关心的样式，查看大部分浏览器的支持情况
@@ -22,20 +22,20 @@ border 调试法 怀疑某个元素有问题，就给这个元素加 border。 b
     </item>
     
     <item>
-      <title>CSS入门2</title>
-      <link>https://www.liubeike.com/posts/css2/</link>
+      <title>CSS知识总结2</title>
+      <link>https://www.liubeike.com/posts/css-02/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.liubeike.com/posts/css2/</guid>
+      <guid>https://www.liubeike.com/posts/css-02/</guid>
       <description>flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文  要记住处在同一个层叠上下文中的 z-index 才能做比较  </description>
     </item>
     
     <item>
-      <title>CSS入门3</title>
-      <link>https://www.liubeike.com/posts/css3/</link>
+      <title>CSS知识总结3</title>
+      <link>https://www.liubeike.com/posts/css-03/</link>
       <pubDate>Fri, 09 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.liubeike.com/posts/css3/</guid>
+      <guid>https://www.liubeike.com/posts/css-03/</guid>
       <description>浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  </description>
     </item>
     

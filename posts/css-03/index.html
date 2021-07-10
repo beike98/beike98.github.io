@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.85.0" />
@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/" />
-  <link rel="canonical" href="https://www.liubeike.com/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/css-03/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/css-03/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -18,10 +18,10 @@
            "@type": "WebPage",
            "@id": "https:\/\/www.liubeike.com"
       },
-      "articleSection" : "",
-      "name" : "刘蓓科的个人博客",
-      "headline" : "刘蓓科的个人博客",
-      "description" : "",
+      "articleSection" : "posts",
+      "name" : "CSS知识总结3",
+      "headline" : "CSS知识总结3",
+      "description" : "浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=\u0026gt;block 没法过渡，一般改成 visibility:hidden=\u0026gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  ",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -29,17 +29,17 @@
       "accountablePerson" : "",
       "copyrightHolder" : "",
       "copyrightYear" : "2021",
-      "datePublished": "2021-07-10 00:00:00 \u002b0000 UTC",
-      "dateModified" : "2021-07-10 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/",
+      "datePublished": "2021-07-09 00:00:00 \u002b0000 UTC",
+      "dateModified" : "2021-07-09 00:00:00 \u002b0000 UTC",
+      "url" : "https:\/\/www.liubeike.com\/posts\/css-03\/",
       "keywords" : [  ]
   }
 </script>
-<title>刘蓓科的个人博客</title>
-  <meta property="og:title" content="刘蓓科的个人博客" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+<title>CSS知识总结3</title>
+  <meta property="og:title" content="CSS知识总结3" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  " />
+  <meta name="description" content="浏览器渲染原理  根据 HTML 构建 HTML 树（DOM） 根据 CSS 构建 CSS 树（CSSOM） 将两颗树合并成一颗渲染树（render tree） Layout 布局（文档流、盒模型、计算大小和位置） Paint 绘制（把边框颜色、文字颜色、阴影等画出来） Compose 合成（根据层叠关系展示画面）  CSS 动画的两种做法 transition  translate 位移 scanle 缩放 rotate 旋转 skew 倾斜  经验之谈  一般都需要配合 transition 过渡 inline 元素不支持 transform，需要先变成 block translate(-50%,-50%)可做绝对定位元素的居中 display：none=&amp;gt;block 没法过渡，一般改成 visibility:hidden=&amp;gt;visible  animation  简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向 animation-name 规定需要绑定到选择器的 keyframe 名称。 animation-duration 规定完成动画所花费的时间，以秒或毫秒计。 animation-timing-function 规定动画的速度曲线。 animation-delay 规定在动画开始之前的延迟。 animation-iteration-count 规定动画应该播放的次数。 animation-direction 规定是否应该轮流反向播放动画。  " />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +65,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,114 +86,85 @@
 </div>
 <div class="header-line"></div>
 
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/http/"><strong>http</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/html/"><strong>HTML</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">CSS知识总结3</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-09 00:00:00 UTC">
+                09 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="浏览器渲染原理">浏览器渲染原理</h2>
+<ol>
+<li>根据 HTML 构建 HTML 树（DOM）</li>
+<li>根据 CSS 构建 CSS 树（CSSOM）</li>
+<li>将两颗树合并成一颗渲染树（render tree）</li>
+<li>Layout 布局（文档流、盒模型、计算大小和位置）</li>
+<li>Paint 绘制（把边框颜色、文字颜色、阴影等画出来）</li>
+<li>Compose 合成（根据层叠关系展示画面）</li>
+</ol>
+<h2 id="css-动画的两种做法">CSS 动画的两种做法</h2>
+<h3 id="transition">transition</h3>
+<ul>
+<li>translate 位移</li>
+<li>scanle 缩放</li>
+<li>rotate 旋转</li>
+<li>skew 倾斜</li>
+</ul>
+<h4 id="经验之谈">经验之谈</h4>
+<ul>
+<li>一般都需要配合 transition 过渡</li>
+<li>inline 元素不支持 transform，需要先变成 block</li>
+<li>translate(-50%,-50%)可做绝对定位元素的居中</li>
+<li>display：none=&gt;block 没法过渡，一般改成 visibility:hidden=&gt;visible</li>
+</ul>
+<h3 id="animation">animation</h3>
+<ul>
+<li>简写语法 animation: 动画名｜时长｜过渡方式｜延迟｜次数｜方向</li>
+<li>animation-name 规定需要绑定到选择器的 keyframe 名称。</li>
+<li>animation-duration 规定完成动画所花费的时间，以秒或毫秒计。</li>
+<li>animation-timing-function 规定动画的速度曲线。</li>
+<li>animation-delay 规定在动画开始之前的延迟。</li>
+<li>animation-iteration-count 规定动画应该播放的次数。</li>
+<li>animation-direction 规定是否应该轮流反向播放动画。</li>
+</ul>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -212,6 +184,8 @@
     
   
 </script>
+
+  
 
 </body>
 
