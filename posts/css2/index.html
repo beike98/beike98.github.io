@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/categories/css/" />
-  <link rel="canonical" href="https://www.liubeike.com/categories/css/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/css2/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/css2/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -18,10 +18,10 @@
            "@type": "WebPage",
            "@id": "https:\/\/www.liubeike.com"
       },
-      "articleSection" : "categories",
-      "name" : "CSS",
-      "headline" : "CSS",
-      "description" : "",
+      "articleSection" : "posts",
+      "name" : "CSS入门笔记（二）布局和定位",
+      "headline" : "CSS入门笔记（二）布局和定位",
+      "description" : "flex 布局重点属性  display:flex \/\/让一个元素变成 flex 容器 flex-direction:row\/column \/\/改变 items 主轴流动方向 flex-wrap:wrap \/\/改变折行 just-content:center\/space-between \/\/改变主轴对齐方向 align-items:center \/\/改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文 要记住处在同一个层叠上下文中的 z-index 才能做比较",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,15 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-10 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-10 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/categories\/css\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/css2\/",
       "keywords" : [  ]
   }
 </script>
-<title>CSS</title>
-  <meta property="og:title" content="CSS" />
+<title>CSS入门笔记（二）布局和定位</title>
+  <meta property="og:title" content="CSS入门笔记（二）布局和定位" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文 要记住处在同一个层叠上下文中的 z-index 才能做比较" />
+  <meta name="description" content="flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文 要记住处在同一个层叠上下文中的 z-index 才能做比较" />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +65,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,42 +86,70 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term">CSS</h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css2/">CSS入门笔记（二）布局和定位</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css/">CSS入门笔记（一）</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">CSS入门笔记（二）布局和定位</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-10 00:00:00 UTC">
+                10 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="flex-布局重点属性">flex 布局重点属性</h2>
+<ul>
+<li>display:flex //让一个元素变成 flex 容器</li>
+<li>flex-direction:row/column //改变 items 主轴流动方向</li>
+<li>flex-wrap:wrap //改变折行</li>
+<li>just-content:center/space-between //改变主轴对齐方向</li>
+<li>align-items:center //改变次轴对齐方向</li>
+</ul>
+<h2 id="一个-div-的分层">一个 div 的分层</h2>
+<p><img src="/images/div-fenceng.png" alt="div-fenceng"></p>
+<h2 id="position-重点属性">position 重点属性</h2>
+<ul>
+<li>static 默认值，待在文档流里</li>
+<li>relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸</li>
+<li>absolute 绝对定位，定位基准是祖先里的非 static</li>
+<li>经验之谈：如果写了 absolute 一定要补 top 和 left</li>
+</ul>
+<h2 id="层叠上下文">层叠上下文</h2>
+<p>要记住处在同一个层叠上下文中的 z-index 才能做比较</p>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -140,6 +169,8 @@
     
   
 </script>
+
+  
 
 </body>
 

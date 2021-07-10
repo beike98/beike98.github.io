@@ -6,7 +6,16 @@
     <description>Recent content on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 09 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS入门笔记（二）布局和定位</title>
+      <link>https://www.liubeike.com/posts/css2/</link>
+      <pubDate>Sat, 10 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/css2/</guid>
+      <description>flex 布局重点属性  display:flex //让一个元素变成 flex 容器 flex-direction:row/column //改变 items 主轴流动方向 flex-wrap:wrap //改变折行 just-content:center/space-between //改变主轴对齐方向 align-items:center //改变次轴对齐方向  一个 div 的分层 position 重点属性  static 默认值，待在文档流里 relative 相对定位，升起来，但不脱离文档流，一般用来做爸爸 absolute 绝对定位，定位基准是祖先里的非 static 经验之谈：如果写了 absolute 一定要补 top 和 left  层叠上下文 要记住处在同一个层叠上下文中的 z-index 才能做比较</description>
+    </item>
+    
     <item>
       <title>CSS入门笔记（一）</title>
       <link>https://www.liubeike.com/posts/css/</link>
