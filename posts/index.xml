@@ -6,7 +6,20 @@
     <description>Recent content in Posts on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 10 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript 的诞生</title>
+      <link>https://www.liubeike.com/posts/js-born/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/js-born/</guid>
+      <description>1994 年，在互联网刚兴起的时代，网景公司（Netscape）发布了 Navigator 浏览器 0.9 版。这是历史上第一个比较成熟的网络浏览器，轰动一时。但是，这个版本的浏览器只能用来浏览，不具备与访问者互动的能力。因此网景公司急需一种网页脚本语言，使得浏览器可以与网页互动。
+1995 年，Sun 公司将 Oak 语言更名为 Java 并推向市场，并宣称“Write Once, Run Anywhere”。网景公司深受 Java 的影响，网景公司高层都非常信赖 Java，所以网景公司决定要蹭 Java 的流量，新开发一门语言，用于浏览器的交互。
+1995 年 4 月，BrendanEich（布兰登·艾奇） 加入网景公司。Brenden 原本研究方向是函数式编程与 Scheme 语言。但是 1995 年 5 月，网景公司指定 Brenden 成为了“新语言”的设计师。并且要求这个“新语言”要和 Java 足够的相似（面向对象思想），但是要比 Java 能够更加简单地上手。
+Brenden 志不在此，而且对 Java 完全不感兴趣，为了完成任务他花了 10 天时间便把这门“新语言”的最初版本设计了出来。
+总的来说，他的设计思路是这样的  借鉴 C 语言的基本语法； 借鉴 Java 语言的数据类型和内存管理； 借鉴 Scheme 语言，将函数提升到&amp;quot;第一等公民&amp;quot;（first class）的地位； 借鉴 Self 语言，使用基于原型（prototype）的继承机制。   所以，Javascript 语言实际上是两种语言风格的混合产物&amp;mdash;-（简化的）函数式编程+（简化的）面向对象编程。这是由 Brendan Eich（函数式编程）与网景公司（面向对象编程）共同决定的。</description>
+    </item>
+    
     <item>
       <title>浅析 URL</title>
       <link>https://www.liubeike.com/posts/url/</link>
