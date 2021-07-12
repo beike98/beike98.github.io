@@ -6,7 +6,24 @@
     <description>Recent content in Posts on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sun, 11 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JacaScript的基本语法</title>
+      <link>https://www.liubeike.com/posts/js-01/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/js-01/</guid>
+      <description>什么是表达式和语句 语句（statement）是为了完成某种任务而进行的操作，比如下面就是一行赋值语句。
+var a = 1 + 1; 这条语句先用 var 命令，声明了变量 a，然后将 1 + 1 的运算结果赋值给变量 a。
+1 + 1 叫做表达式（expression），指一个为了得到返回值的计算式。
+语句和表达式的区别在于，前者主要为了进行某种操作，一般情况下不需要返回值；后者则是为了得到返回值，一定会返回一个值。
+凡是 JavaScript 语言中预期为值的地方，都可以使用表达式。比如，赋值语句的等号右边，预期是一个值，因此可以放置各种表达式。
+标识符的规则 标识符（identifier）指的是用来识别各种值的合法名称。最常见的标识符就是变量名，以及后面要提到的函数名。JavaScript 语言的标识符对大小写敏感，所以 a 和 A 是两个不同的标识符。
+标识符命名规则如下:
+ 第一个字符，可以是任意 Unicode 字母（包括英文字母和其他语言的字母），以及美元符号（$）和下划线（_）。 第二个字符及后面的字符，除了 Unicode 字母、美元符号和下划线，还可以用数字 0-9。 中文是合法的标识符，可以用作变量名。  if else if (a === 1) { //满足条件时，执行的语句 } else { //不满足条件时，执行的语句 } 上面代码判断变量 a 是否等于 1，如果等于就执行 if 代码块，否则执行 else 代码块。
+while 、 for  while  var i = 0; while (i &amp;lt; 100) { console.</description>
+    </item>
+    
     <item>
       <title>JavaScript 的诞生</title>
       <link>https://www.liubeike.com/posts/js-born/</link>
