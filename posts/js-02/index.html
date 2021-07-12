@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.85.0" />
@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/" />
-  <link rel="canonical" href="https://www.liubeike.com/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/js-02/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/js-02/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -18,10 +18,10 @@
            "@type": "WebPage",
            "@id": "https:\/\/www.liubeike.com"
       },
-      "articleSection" : "",
-      "name" : "刘蓓科的个人博客",
-      "headline" : "刘蓓科的个人博客",
-      "description" : "",
+      "articleSection" : "posts",
+      "name" : "JacaScript的数据类型",
+      "headline" : "JacaScript的数据类型",
+      "description" : "七种数据类型  number 数字 string 字符串 bool 布尔 symbol 符号 undefined 空 null 空 object 对象  类型转换  number 转 string\nString(n)或 n\u002b\u0027\u0027 string 转 number\nNumber(s)或 s-0 x 转 bool\nBoolean(x)或!!x x 转 string\nString(x)或 x.toString()  五个 falsy 值  undefined null 0 NaN \u0027\u0027  ",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,23 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-12 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-12 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/js-02\/",
       "keywords" : [  ]
   }
 </script>
-<title>刘蓓科的个人博客</title>
-  <meta property="og:title" content="刘蓓科的个人博客" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+<title>JacaScript的数据类型</title>
+  <meta property="og:title" content="JacaScript的数据类型" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="七种数据类型  number 数字 string 字符串 bool 布尔 symbol 符号 undefined 空 null 空 object 对象  类型转换  number 转 string
+String(n)或 n&#43;&#39;&#39; string 转 number
+Number(s)或 s-0 x 转 bool
+Boolean(x)或!!x x 转 string
+String(x)或 x.toString()  五个 falsy 值  undefined null 0 NaN &#39;&#39;  " />
+  <meta name="description" content="七种数据类型  number 数字 string 字符串 bool 布尔 symbol 符号 undefined 空 null 空 object 对象  类型转换  number 转 string
+String(n)或 n&#43;&#39;&#39; string 转 number
+Number(s)或 s-0 x 转 bool
+Boolean(x)或!!x x 转 string
+String(x)或 x.toString()  五个 falsy 值  undefined null 0 NaN &#39;&#39;  " />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +73,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,174 +94,80 @@
 </div>
 <div class="header-line"></div>
 
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-02/">JacaScript的数据类型</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-01/">JacaScript的基本语法</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-11 00:00:00 UTC">Jul 11</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-born/">JavaScript 的诞生</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/javascript/"><strong>JavaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/http/"><strong>http</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/html/"><strong>HTML</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">JacaScript的数据类型</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-12 00:00:00 UTC">
+                12 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="七种数据类型">七种数据类型</h2>
+<ul>
+<li>number 数字</li>
+<li>string 字符串</li>
+<li>bool 布尔</li>
+<li>symbol 符号</li>
+<li>undefined 空</li>
+<li>null 空</li>
+<li>object 对象</li>
+</ul>
+<h2 id="类型转换">类型转换</h2>
+<ul>
+<li>number 转 string<br>
+String(n)或 n+''</li>
+<li>string 转 number<br>
+Number(s)或 s-0</li>
+<li>x 转 bool<br>
+Boolean(x)或!!x</li>
+<li>x 转 string<br>
+String(x)或 x.toString()</li>
+</ul>
+<h2 id="五个-falsy-值">五个 falsy 值</h2>
+<ul>
+<li>undefined</li>
+<li>null</li>
+<li>0</li>
+<li>NaN</li>
+<li>''</li>
+</ul>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -272,6 +187,8 @@
     
   
 </script>
+
+  
 
 </body>
 

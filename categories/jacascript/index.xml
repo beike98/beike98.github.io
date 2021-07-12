@@ -24,5 +24,18 @@ var a = 1 + 1; 这条语句先用 var 命令，声明了变量 a，然后将 1 +
 while 、 for  while  var i = 0; while (i &amp;lt; 100) { console.</description>
     </item>
     
+    <item>
+      <title>JacaScript的数据类型</title>
+      <link>https://www.liubeike.com/posts/js-02/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/js-02/</guid>
+      <description>七种数据类型  number 数字 string 字符串 bool 布尔 symbol 符号 undefined 空 null 空 object 对象  类型转换  number 转 string
+String(n)或 n+&#39;&#39; string 转 number
+Number(s)或 s-0 x 转 bool
+Boolean(x)或!!x x 转 string
+String(x)或 x.toString()  五个 falsy 值  undefined null 0 NaN &#39;&#39;  </description>
+    </item>
+    
   </channel>
 </rss>
