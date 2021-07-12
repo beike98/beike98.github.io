@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/posts/" />
-  <link rel="canonical" href="https://www.liubeike.com/posts/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/js-03/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/js-03/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -19,9 +19,9 @@
            "@id": "https:\/\/www.liubeike.com"
       },
       "articleSection" : "posts",
-      "name" : "Posts",
-      "headline" : "Posts",
-      "description" : "",
+      "name" : "JS对象基本用法",
+      "headline" : "JS对象基本用法",
+      "description" : "声明对象的两种语法 写法  let obj = { \u0026lsquo;name\u0026rsquo;: \u0026lsquo;baker\u0026rsquo;, \u0026lsquo;age\u0026rsquo;: 18 } let obj = new Object({\u0026lsquo;name\u0026rsquo;: \u0026lsquo;baker\u0026rsquo;})  细节  键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了，键名也还是字符串（重要）  如何删除对象的属性 delete obj.xxx 或 delete obj[\u0026lsquo;xxx\u0026rsquo;]\n即可删除 obj 的 xxx 属性，但请区分「属性值为 undefined」和「不含属性名」。\n  不含属性名\n\u0026lsquo;xxx\u0026rsquo; in obj === false\n  含有属性名，但是值为 undefined\n\u0026lsquo;xxx\u0026rsquo; in obj \u0026amp;\u0026amp; obj.xxx === undefined\n  注意 obj.xxx === undefined\n不能断定 \u0026lsquo;xxx\u0026rsquo; 是否为 obj 的属性\n  如何查看对象的属性  查看自身所有属性",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,31 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-12 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-12 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/posts\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/js-03\/",
       "keywords" : [  ]
   }
 </script>
-<title>Posts</title>
-  <meta property="og:title" content="Posts" />
+<title>JS对象基本用法</title>
+  <meta property="og:title" content="JS对象基本用法" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="声明对象的两种语法 写法  let obj = { &amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;, &amp;lsquo;age&amp;rsquo;: 18 } let obj = new Object({&amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;})  细节  键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了，键名也还是字符串（重要）  如何删除对象的属性 delete obj.xxx 或 delete obj[&amp;lsquo;xxx&amp;rsquo;]
+即可删除 obj 的 xxx 属性，但请区分「属性值为 undefined」和「不含属性名」。
+  不含属性名
+&amp;lsquo;xxx&amp;rsquo; in obj === false
+  含有属性名，但是值为 undefined
+&amp;lsquo;xxx&amp;rsquo; in obj &amp;amp;&amp;amp; obj.xxx === undefined
+  注意 obj.xxx === undefined
+不能断定 &amp;lsquo;xxx&amp;rsquo; 是否为 obj 的属性
+  如何查看对象的属性  查看自身所有属性" />
+  <meta name="description" content="声明对象的两种语法 写法  let obj = { &amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;, &amp;lsquo;age&amp;rsquo;: 18 } let obj = new Object({&amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;})  细节  键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了，键名也还是字符串（重要）  如何删除对象的属性 delete obj.xxx 或 delete obj[&amp;lsquo;xxx&amp;rsquo;]
+即可删除 obj 的 xxx 属性，但请区分「属性值为 undefined」和「不含属性名」。
+  不含属性名
+&amp;lsquo;xxx&amp;rsquo; in obj === false
+  含有属性名，但是值为 undefined
+&amp;lsquo;xxx&amp;rsquo; in obj &amp;amp;&amp;amp; obj.xxx === undefined
+  注意 obj.xxx === undefined
+不能断定 &amp;lsquo;xxx&amp;rsquo; 是否为 obj 的属性
+  如何查看对象的属性  查看自身所有属性" />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +81,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,133 +102,118 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-03/">JS对象基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-02/">JacaScript的数据类型</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-01/">JacaScript的基本语法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-11 00:00:00 UTC">Jul 11</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-born/">JavaScript 的诞生</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">JS对象基本用法</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-12 00:00:00 UTC">
+                12 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="声明对象的两种语法">声明对象的两种语法</h2>
+<h3 id="写法">写法</h3>
+<ul>
+<li>let obj = { &lsquo;name&rsquo;: &lsquo;baker&rsquo;, &lsquo;age&rsquo;: 18 }</li>
+<li>let obj = new Object({&lsquo;name&rsquo;: &lsquo;baker&rsquo;})</li>
+</ul>
+<h3 id="细节">细节</h3>
+<ol>
+<li>键名是字符串，不是标识符，可以包含任意字符</li>
+<li>引号可省略，省略之后就只能写标识符</li>
+<li>就算引号省略了，键名也还是字符串（重要）</li>
+</ol>
+<h2 id="如何删除对象的属性">如何删除对象的属性</h2>
+<p>delete obj.xxx 或 delete obj[&lsquo;xxx&rsquo;]<br>
+即可删除 obj 的 xxx 属性，但请区分「属性值为 undefined」和「不含属性名」。</p>
+<ul>
+<li>
+<p>不含属性名<br>
+&lsquo;xxx&rsquo; in obj === false</p>
+</li>
+<li>
+<p>含有属性名，但是值为 undefined<br>
+&lsquo;xxx&rsquo; in obj &amp;&amp; obj.xxx === undefined</p>
+</li>
+<li>
+<p>注意 obj.xxx === undefined<br>
+不能断定 &lsquo;xxx&rsquo; 是否为 obj 的属性</p>
+</li>
+</ul>
+<h2 id="如何查看对象的属性">如何查看对象的属性</h2>
+<ul>
+<li>查看自身所有属性<br>
+Object.keys(obj)</li>
+<li>查看自身+共有属性<br>
+console.dir(obj)</li>
+<li>判断一个属性是自身的还是共有的<br>
+obj.hasOwnProperty(&lsquo;toString&rsquo;)</li>
+<li>查看某个属性的 value 值<br>
+中括号语法：obj[&lsquo;key&rsquo;]//key 是字符串，一定要带引号<br>
+点语法：obj.key</li>
+</ul>
+<h2 id="如何修改或增加对象的属性">如何修改或增加对象的属性</h2>
+<ul>
+<li>直接赋值<br>
+let obj = { name: &ldquo;baker&rdquo; }; // name 是字符串<br>
+obj.name = &ldquo;baker&rdquo;; // name 是字符串<br>
+obj[&ldquo;name&rdquo;] = &ldquo;baker&rdquo;;// name 是字符串，一定要带引号</li>
+<li>批量赋值<br>
+Object.assign(obj, { age: 18, gender: &ldquo;man&rdquo; });</li>
+</ul>
+<h2 id="name-in-obj-和-objhasownpropertyname-的区别">&lsquo;name&rsquo; in obj 和 obj.hasOwnProperty(&lsquo;name&rsquo;) 的区别</h2>
+<p>都是用来查看属性是不是在对象里的方法，但前者不论是自身属性和共有属性都返回 true，而后者仅仅是自身属性才返回 true。</p>
+<h2 id="原型">原型</h2>
+<h3 id="每个对象都有原型">每个对象都有原型</h3>
+<ul>
+<li>原型里存着对象的共有属性</li>
+<li>比如 obj 的原型就是一个对象</li>
+<li>obj.__proto__ 存着这个对象的地址</li>
+<li>这个对象里有 toString / constructor / valueOf 等属性</li>
+</ul>
+<h3 id="对象的原型也是对象">对象的原型也是对象</h3>
+<ul>
+<li>所以对象的原型也有原型</li>
+<li>obj = {} 的原型即为所有对象的原型</li>
+<li>这个原型包含所有对象的共有属性，是对象的根</li>
+<li>这个原型也有原型，是 null</li>
+</ul>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -231,6 +233,8 @@
     
   
 </script>
+
+  
 
 </body>
 
