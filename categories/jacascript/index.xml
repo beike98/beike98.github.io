@@ -6,7 +6,16 @@
     <description>Recent content in JacaScript on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 12 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/jacascript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/jacascript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JS数组基本用法</title>
+      <link>https://www.liubeike.com/posts/js-04/</link>
+      <pubDate>Tue, 13 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/js-04/</guid>
+      <description>创建数组  新建  let arr = [1, 2, 3]; let arr = new Array(1, 2, 3); let arr = new Array(3);  转化  let arr = &amp;#34;1,2,3&amp;#34;.split(&amp;#34;,&amp;#34;); let arr = &amp;#34;123&amp;#34;.split(&amp;#34;&amp;#34;); Array.from(&amp;#34;123&amp;#34;);  伪数组  /* 伪数组的原型链中并没有数组的原型*/ let divList = document.querySelectorAll(&amp;#34;div&amp;#34;);  合并  arr1.concat(arr2);  截取 arr1.slice(1)//从第二个元素开始 arr1.slice(0)//全部截取，注意：js 只提供浅拷贝  数组中的元素  删除  arr.shift(); //删除arr头部的元素，并返回被删元素 arr.pop(); //删除arr尾部的元素，并返回被删元素 arr.splice(index, 1, &amp;#34;x&amp;#34;); //删除index的一个元素并添加&amp;#39;x&amp;#39;  查看  //第一种查询所有属性名和值 for (let i = 0; i &amp;lt; arr.</description>
+    </item>
+    
     <item>
       <title>JacaScript的基本语法</title>
       <link>https://www.liubeike.com/posts/js-01/</link>

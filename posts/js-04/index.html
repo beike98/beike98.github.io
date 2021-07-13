@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/categories/" />
-  <link rel="canonical" href="https://www.liubeike.com/categories/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/js-04/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/js-04/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -18,10 +18,10 @@
            "@type": "WebPage",
            "@id": "https:\/\/www.liubeike.com"
       },
-      "articleSection" : "categories",
-      "name" : "Categories",
-      "headline" : "Categories",
-      "description" : "",
+      "articleSection" : "posts",
+      "name" : "JS数组基本用法",
+      "headline" : "JS数组基本用法",
+      "description" : "创建数组  新建  let arr = [1, 2, 3]; let arr = new Array(1, 2, 3); let arr = new Array(3);  转化  let arr = \u0026#34;1,2,3\u0026#34;.split(\u0026#34;,\u0026#34;); let arr = \u0026#34;123\u0026#34;.split(\u0026#34;\u0026#34;); Array.from(\u0026#34;123\u0026#34;);  伪数组  \/* 伪数组的原型链中并没有数组的原型*\/ let divList = document.querySelectorAll(\u0026#34;div\u0026#34;);  合并  arr1.concat(arr2);  截取 arr1.slice(1)\/\/从第二个元素开始 arr1.slice(0)\/\/全部截取，注意：js 只提供浅拷贝  数组中的元素  删除  arr.shift(); \/\/删除arr头部的元素，并返回被删元素 arr.pop(); \/\/删除arr尾部的元素，并返回被删元素 arr.splice(index, 1, \u0026#34;x\u0026#34;); \/\/删除index的一个元素并添加\u0026#39;x\u0026#39;  查看  \/\/第一种查询所有属性名和值 for (let i = 0; i \u0026lt; arr.",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,15 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-13 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-13 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/categories\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/js-04\/",
       "keywords" : [  ]
   }
 </script>
-<title>Categories</title>
-  <meta property="og:title" content="Categories" />
+<title>JS数组基本用法</title>
+  <meta property="og:title" content="JS数组基本用法" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="创建数组  新建  let arr = [1, 2, 3]; let arr = new Array(1, 2, 3); let arr = new Array(3);  转化  let arr = &amp;#34;1,2,3&amp;#34;.split(&amp;#34;,&amp;#34;); let arr = &amp;#34;123&amp;#34;.split(&amp;#34;&amp;#34;); Array.from(&amp;#34;123&amp;#34;);  伪数组  /* 伪数组的原型链中并没有数组的原型*/ let divList = document.querySelectorAll(&amp;#34;div&amp;#34;);  合并  arr1.concat(arr2);  截取 arr1.slice(1)//从第二个元素开始 arr1.slice(0)//全部截取，注意：js 只提供浅拷贝  数组中的元素  删除  arr.shift(); //删除arr头部的元素，并返回被删元素 arr.pop(); //删除arr尾部的元素，并返回被删元素 arr.splice(index, 1, &amp;#34;x&amp;#34;); //删除index的一个元素并添加&amp;#39;x&amp;#39;  查看  //第一种查询所有属性名和值 for (let i = 0; i &amp;lt; arr." />
+  <meta name="description" content="创建数组  新建  let arr = [1, 2, 3]; let arr = new Array(1, 2, 3); let arr = new Array(3);  转化  let arr = &amp;#34;1,2,3&amp;#34;.split(&amp;#34;,&amp;#34;); let arr = &amp;#34;123&amp;#34;.split(&amp;#34;&amp;#34;); Array.from(&amp;#34;123&amp;#34;);  伪数组  /* 伪数组的原型链中并没有数组的原型*/ let divList = document.querySelectorAll(&amp;#34;div&amp;#34;);  合并  arr1.concat(arr2);  截取 arr1.slice(1)//从第二个元素开始 arr1.slice(0)//全部截取，注意：js 只提供浅拷贝  数组中的元素  删除  arr.shift(); //删除arr头部的元素，并返回被删元素 arr.pop(); //删除arr尾部的元素，并返回被删元素 arr.splice(index, 1, &amp;#34;x&amp;#34;); //删除index的一个元素并添加&amp;#39;x&amp;#39;  查看  //第一种查询所有属性名和值 for (let i = 0; i &amp;lt; arr." />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +65,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,11 +86,144 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">JS数组基本用法</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-13 00:00:00 UTC">
+                13 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="创建数组">创建数组</h2>
+<ul>
+<li>新建</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">let</span> arr = [1, 2, 3];
+<span style="font-weight:bold">let</span> arr = <span style="font-weight:bold">new</span> Array(1, 2, 3);
+<span style="font-weight:bold">let</span> arr = <span style="font-weight:bold">new</span> Array(3);
+</code></pre></div><ul>
+<li>转化</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">let</span> arr = <span style="font-style:italic">&#34;1,2,3&#34;</span>.split(<span style="font-style:italic">&#34;,&#34;</span>);
+<span style="font-weight:bold">let</span> arr = <span style="font-style:italic">&#34;123&#34;</span>.split(<span style="font-style:italic">&#34;&#34;</span>);
+Array.from(<span style="font-style:italic">&#34;123&#34;</span>);
+</code></pre></div><ul>
+<li>伪数组</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-style:italic">/* 伪数组的原型链中并没有数组的原型*/</span>
+<span style="font-weight:bold">let</span> divList = document.querySelectorAll(<span style="font-style:italic">&#34;div&#34;</span>);
+</code></pre></div><ul>
+<li>合并</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">arr1.concat(arr2);
+</code></pre></div><ul>
+<li>截取
+arr1.slice(1)//从第二个元素开始
+arr1.slice(0)//全部截取，注意：js 只提供浅拷贝</li>
+</ul>
+<h2 id="数组中的元素">数组中的元素</h2>
+<ul>
+<li>删除</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">arr.shift(); <span style="font-style:italic">//删除arr头部的元素，并返回被删元素
+</span><span style="font-style:italic"></span>arr.pop(); <span style="font-style:italic">//删除arr尾部的元素，并返回被删元素
+</span><span style="font-style:italic"></span>arr.splice(index, 1, <span style="font-style:italic">&#34;x&#34;</span>); <span style="font-style:italic">//删除index的一个元素并添加&#39;x&#39;
+</span></code></pre></div><ul>
+<li>查看</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-style:italic">//第一种查询所有属性名和值
+</span><span style="font-style:italic"></span><span style="font-weight:bold">for</span> (<span style="font-weight:bold">let</span> i = 0; i &lt; arr.length; i++) {
+  console.log(<span style="font-style:italic">`</span><span style="font-weight:bold;font-style:italic">${</span>i<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">:</span><span style="font-weight:bold;font-style:italic">${</span>arr[i]<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">`</span>);
+}
+<span style="font-style:italic">//第二种查询所有属性名和值
+</span><span style="font-style:italic"></span>arr.forEach(<span style="font-weight:bold">function</span> (item, index) {
+  console.log(<span style="font-style:italic">`</span><span style="font-weight:bold;font-style:italic">${</span>index<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">:</span><span style="font-weight:bold;font-style:italic">${</span>item<span style="font-weight:bold;font-style:italic">}</span><span style="font-style:italic">`</span>);
+});
+<span style="font-style:italic">//查找某个元素是否在数组里
+</span><span style="font-style:italic"></span>arr.indexOf(item); <span style="font-style:italic">//存在返回索引，否则返回-1
+</span><span style="font-style:italic">//使用条件查找元素
+</span><span style="font-style:italic"></span>arr.find((item) =&gt; item % 2 === 0); <span style="font-style:italic">//找第一个偶数
+</span></code></pre></div><ul>
+<li>增加</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">arr.push(item1, item2); <span style="font-style:italic">//修改数组在尾部添加元素，返回新长度
+</span><span style="font-style:italic"></span>arr.unshift(item1, item2); <span style="font-style:italic">//修改数组在头部添加元素，返回新长度
+</span><span style="font-style:italic"></span>arr.splice(index, 0, <span style="font-style:italic">&#34;x&#34;</span>); <span style="font-style:italic">//在index处插入&#39;x&#39;
+</span></code></pre></div><ul>
+<li>修改</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">arr.reverse(); <span style="font-style:italic">//修改数组，反转顺序
+</span><span style="font-style:italic"></span>arr.sort((a, b) =&gt; a - b); <span style="font-style:italic">//自定义顺序
+</span></code></pre></div><h2 id="数组变换">数组变换</h2>
+<ul>
+<li>map</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-style:italic">//使用 arr.map 把 0 变成&#39;周日&#39;，把 1 变成&#39;周一&#39;，以此类推
+</span><span style="font-style:italic"></span><span style="font-weight:bold">let</span> arr = [0, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 6];
+<span style="font-weight:bold">let</span> arr2 = arr.map((i) =&gt; {
+  console.log(i);
+  <span style="font-weight:bold">return</span> {
+    0: <span style="font-style:italic">&#34;周日&#34;</span>,
+    1: <span style="font-style:italic">&#34;周一&#34;</span>,
+    2: <span style="font-style:italic">&#34;周二&#34;</span>,
+    3: <span style="font-style:italic">&#34;周三&#34;</span>,
+    4: <span style="font-style:italic">&#34;周四&#34;</span>,
+    5: <span style="font-style:italic">&#34;周五&#34;</span>,
+    6: <span style="font-style:italic">&#34;周六&#34;</span>,
+  }[i];
+});
+console.log(arr2);
+</code></pre></div><ul>
+<li>filter</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-style:italic">//找出所有大于 60 分的成绩
+</span><span style="font-style:italic"></span><span style="font-weight:bold">let</span> scores = [95, 91, 59, 55, 42, 82, 72, 85, 67, 66, 55, 91];
+<span style="font-weight:bold">let</span> scores2 = scores.filter((s) =&gt; s &gt; 60);
+console.log(scores2);
+</code></pre></div><ul>
+<li>reduce</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-style:italic">//算出所有奇数之和
+</span><span style="font-style:italic"></span><span style="font-weight:bold">let</span> scores = [95, 91, 59, 55, 42, 82, 72, 85, 67, 66, 55, 91];
+<span style="font-weight:bold">let</span> sum = scores.reduce((sum, n) =&gt; (n % 2 ? sum + n : sum), 0);
+console.log(sum);
+</code></pre></div>
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -109,6 +243,8 @@
     
   
 </script>
+
+  
 
 </body>
 
