@@ -17,7 +17,24 @@
     </item>
     
     <item>
-      <title>JacaScript的基本语法</title>
+      <title>JS对象基本用法</title>
+      <link>https://www.liubeike.com/posts/js-03/</link>
+      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/js-03/</guid>
+      <description>声明对象的两种语法 写法  let obj = { &amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;, &amp;lsquo;age&amp;rsquo;: 18 } let obj = new Object({&amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;})  细节  键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了，键名也还是字符串（重要）  如何删除对象的属性 delete obj.xxx 或 delete obj[&amp;lsquo;xxx&amp;rsquo;]
+即可删除 obj 的 xxx 属性，但请区分「属性值为 undefined」和「不含属性名」。
+  不含属性名
+&amp;lsquo;xxx&amp;rsquo; in obj === false
+  含有属性名，但是值为 undefined
+&amp;lsquo;xxx&amp;rsquo; in obj &amp;amp;&amp;amp; obj.xxx === undefined
+  注意 obj.xxx === undefined
+不能断定 &amp;lsquo;xxx&amp;rsquo; 是否为 obj 的属性
+  如何查看对象的属性  查看自身所有属性</description>
+    </item>
+    
+    <item>
+      <title>JS的基本语法</title>
       <link>https://www.liubeike.com/posts/js-01/</link>
       <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -34,7 +51,7 @@ while 、 for  while  var i = 0; while (i &amp;lt; 100) { console.</description>
     </item>
     
     <item>
-      <title>JacaScript的数据类型</title>
+      <title>JS的数据类型</title>
       <link>https://www.liubeike.com/posts/js-02/</link>
       <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -44,23 +61,6 @@ String(n)或 n+&#39;&#39; string 转 number
 Number(s)或 s-0 x 转 bool
 Boolean(x)或!!x x 转 string
 String(x)或 x.toString()  五个 falsy 值  undefined null 0 NaN &#39;&#39;  </description>
-    </item>
-    
-    <item>
-      <title>JS对象基本用法</title>
-      <link>https://www.liubeike.com/posts/js-03/</link>
-      <pubDate>Mon, 12 Jul 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.liubeike.com/posts/js-03/</guid>
-      <description>声明对象的两种语法 写法  let obj = { &amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;, &amp;lsquo;age&amp;rsquo;: 18 } let obj = new Object({&amp;lsquo;name&amp;rsquo;: &amp;lsquo;baker&amp;rsquo;})  细节  键名是字符串，不是标识符，可以包含任意字符 引号可省略，省略之后就只能写标识符 就算引号省略了，键名也还是字符串（重要）  如何删除对象的属性 delete obj.xxx 或 delete obj[&amp;lsquo;xxx&amp;rsquo;]
-即可删除 obj 的 xxx 属性，但请区分「属性值为 undefined」和「不含属性名」。
-  不含属性名
-&amp;lsquo;xxx&amp;rsquo; in obj === false
-  含有属性名，但是值为 undefined
-&amp;lsquo;xxx&amp;rsquo; in obj &amp;amp;&amp;amp; obj.xxx === undefined
-  注意 obj.xxx === undefined
-不能断定 &amp;lsquo;xxx&amp;rsquo; 是否为 obj 的属性
-  如何查看对象的属性  查看自身所有属性</description>
     </item>
     
     <item>
