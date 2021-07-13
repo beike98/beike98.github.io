@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/posts/" />
-  <link rel="canonical" href="https://www.liubeike.com/posts/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/js-05/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/js-05/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -19,9 +19,9 @@
            "@id": "https:\/\/www.liubeike.com"
       },
       "articleSection" : "posts",
-      "name" : "Posts",
-      "headline" : "Posts",
-      "description" : "",
+      "name" : "JS函数的执行时机",
+      "headline" : "JS函数的执行时机",
+      "description" : "举个例子:\nlet i = 0; for (i = 0; i \u0026lt; 6; i\u002b\u002b) { setTimeout(() =\u0026gt; { console.log(i); }, 0); } 运行上面代码，我们会发现 console 打印出来的是 6 个 6,那这是为什么呢？ 在上面代码中，我们使用 setTimeout()定义了一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码。 并将他的延时设为了 0，但是需要被强调是，setTimeout()实际延时会比设定值更久，导致了将原本要即时打印的结果延迟到 for 循环结束之后，所以这里结果是 for 循环结束才开始打印执行的，且只有 1 个 i，这时 i 的值已经是 5 了，再执行 i\u002b\u002b，打印出了最终的 6 个 6。\n那么，如果我们想写出让上面代码打印 0、1、2、3、4、5 的方法，该如何写呢？\n 可以让 i 定义成 for 循环的局部变量，例如：  for (let i = 0; i \u0026lt; 6; i\u002b\u002b) { setTimeout(() =\u0026gt; { console.log(i); }, 0); } ",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,21 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-13 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-13 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/posts\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/js-05\/",
       "keywords" : [  ]
   }
 </script>
-<title>Posts</title>
-  <meta property="og:title" content="Posts" />
+<title>JS函数的执行时机</title>
+  <meta property="og:title" content="JS函数的执行时机" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="举个例子:
+let i = 0; for (i = 0; i &amp;lt; 6; i&#43;&#43;) { setTimeout(() =&amp;gt; { console.log(i); }, 0); } 运行上面代码，我们会发现 console 打印出来的是 6 个 6,那这是为什么呢？ 在上面代码中，我们使用 setTimeout()定义了一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码。 并将他的延时设为了 0，但是需要被强调是，setTimeout()实际延时会比设定值更久，导致了将原本要即时打印的结果延迟到 for 循环结束之后，所以这里结果是 for 循环结束才开始打印执行的，且只有 1 个 i，这时 i 的值已经是 5 了，再执行 i&#43;&#43;，打印出了最终的 6 个 6。
+那么，如果我们想写出让上面代码打印 0、1、2、3、4、5 的方法，该如何写呢？
+ 可以让 i 定义成 for 循环的局部变量，例如：  for (let i = 0; i &amp;lt; 6; i&#43;&#43;) { setTimeout(() =&amp;gt; { console.log(i); }, 0); } " />
+  <meta name="description" content="举个例子:
+let i = 0; for (i = 0; i &amp;lt; 6; i&#43;&#43;) { setTimeout(() =&amp;gt; { console.log(i); }, 0); } 运行上面代码，我们会发现 console 打印出来的是 6 个 6,那这是为什么呢？ 在上面代码中，我们使用 setTimeout()定义了一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码。 并将他的延时设为了 0，但是需要被强调是，setTimeout()实际延时会比设定值更久，导致了将原本要即时打印的结果延迟到 for 循环结束之后，所以这里结果是 for 循环结束才开始打印执行的，且只有 1 个 i，这时 i 的值已经是 5 了，再执行 i&#43;&#43;，打印出了最终的 6 个 6。
+那么，如果我们想写出让上面代码打印 0、1、2、3、4、5 的方法，该如何写呢？
+ 可以让 i 定义成 for 循环的局部变量，例如：  for (let i = 0; i &amp;lt; 6; i&#43;&#43;) { setTimeout(() =&amp;gt; { console.log(i); }, 0); } " />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +71,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,159 +92,71 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-04/">JS数组基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-05/">JS函数的执行时机</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-02/">JS的数据类型</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-01/">JS的基本语法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-03/">JS对象基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-11 00:00:00 UTC">Jul 11</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-born/">JavaScript 的诞生</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">JS函数的执行时机</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-13 00:00:00 UTC">
+                13 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>举个例子:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">let</span> i = 0;
+<span style="font-weight:bold">for</span> (i = 0; i &lt; 6; i++) {
+  setTimeout(() =&gt; {
+    console.log(i);
+  }, 0);
+}
+</code></pre></div><p>运行上面代码，我们会发现 console 打印出来的是 6 个 6,那这是为什么呢？
+<img src="/images/js-05-01.png" alt="console"></p>
+<p>在上面代码中，我们使用 setTimeout()定义了一个定时器，该定时器在定时器到期后执行一个函数或指定的一段代码。
+并将他的延时设为了 0，但是需要被强调是，setTimeout()实际延时会比设定值更久，导致了将原本要即时打印的结果延迟到 for 循环结束之后，所以这里结果是 for 循环结束才开始打印执行的，且只有 1 个 i，这时 i 的值已经是 5 了，再执行 i++，打印出了最终的 6 个 6。</p>
+<p>那么，如果我们想写出让上面代码打印 0、1、2、3、4、5 的方法，该如何写呢？</p>
+<ul>
+<li>可以让 i 定义成 for 循环的局部变量，例如：</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-weight:bold">for</span> (<span style="font-weight:bold">let</span> i = 0; i &lt; 6; i++) {
+  setTimeout(() =&gt; {
+    console.log(i);
+  }, 0);
+}
+</code></pre></div>
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -257,6 +176,8 @@
     
   
 </script>
+
+  
 
 </body>
 
