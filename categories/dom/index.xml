@@ -8,7 +8,7 @@
     <language>zh-CN</language>
     <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/dom/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>DOM事件流模型</title>
+      <title>DOM事件和事件委托</title>
       <link>https://www.liubeike.com/posts/dom/</link>
       <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
       
@@ -17,7 +17,9 @@
 冒泡事件流 当事件在某一元素节点被触发时，事件会跟随该节点的各个父元素节点冒泡穿过，直到找到拥有该事件的处理节点。即 button &amp;gt; p &amp;gt; div &amp;gt; body &amp;gt; html &amp;gt; document
 捕获事件流 当事件在某一元素节点被触发时，事件会先从最外层父元素节点向里捕获，直到找到拥有该事件的处理节点。即 document &amp;gt; html &amp;gt; body &amp;gt; div &amp;gt; p &amp;gt; button
 DOM 事件流模型 DOM 事件流分为 3 个阶段：
- 捕获阶段：事件从 Document 节点自上而下向目标节点传播的阶段； 目标阶段：真正的目标节点正在处理事件的阶段； 冒泡阶段：事件从目标节点自下而上向 Document 节点传播的阶段。  </description>
+ 捕获阶段：事件从 Document 节点自上而下向目标节点传播的阶段； 目标阶段：真正的目标节点正在处理事件的阶段； 冒泡阶段：事件从目标节点自下而上向 Document 节点传播的阶段。  DOM 事件委托 如果想要在大量的子元素中单击任何一个都可以运行某个事件，我们还可以将事件监听器设置在其父节点上，并让子节点上发生的事件冒泡到父节点上，而不是每个子节点单独设置事件监听器。
+举个例子，比如一个宿舍的同学同时快递到了，一种方法就是他们都傻傻地一个个去领取，还有一种方法就是把这件事情委托给宿舍长，让一个人出去拿好所有快递，然后再根据收件人一一分发给每个宿舍同学；
+在这里，取快递就是一个事件，每个同学指的是需要响应事件的 DOM 元素，而出去统一领取快递的宿舍长就是被委托的父元素，所以真正绑定事件的是这个元素，按照收件人分发快递的过程就是在事件执行中，需要判断当前响应的事件应该匹配到委托元素中的哪一个或者哪几个。</description>
     </item>
     
   </channel>
