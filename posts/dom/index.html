@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/posts/" />
-  <link rel="canonical" href="https://www.liubeike.com/posts/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/dom/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/dom/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -19,9 +19,9 @@
            "@id": "https:\/\/www.liubeike.com"
       },
       "articleSection" : "posts",
-      "name" : "Posts",
-      "headline" : "Posts",
-      "description" : "",
+      "name" : "DOM事件流模型",
+      "headline" : "DOM事件流模型",
+      "description" : "DOM(文档对象模型)结构是一个树型结构，当一个 HTML 元素产生一个事件时，该事件会在元素节点与根结点之间的路径传播，路径所经过的结点都会收到该事件，这个传播过程可称为 DOM 事件流。\n冒泡事件流 当事件在某一元素节点被触发时，事件会跟随该节点的各个父元素节点冒泡穿过，直到找到拥有该事件的处理节点。即 button \u0026gt; p \u0026gt; div \u0026gt; body \u0026gt; html \u0026gt; document\n捕获事件流 当事件在某一元素节点被触发时，事件会先从最外层父元素节点向里捕获，直到找到拥有该事件的处理节点。即 document \u0026gt; html \u0026gt; body \u0026gt; div \u0026gt; p \u0026gt; button\nDOM 事件流模型 DOM 事件流分为 3 个阶段：\n 捕获阶段：事件从 Document 节点自上而下向目标节点传播的阶段； 目标阶段：真正的目标节点正在处理事件的阶段； 冒泡阶段：事件从目标节点自下而上向 Document 节点传播的阶段。  ",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,23 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-15 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-15 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/posts\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/dom\/",
       "keywords" : [  ]
   }
 </script>
-<title>Posts</title>
-  <meta property="og:title" content="Posts" />
+<title>DOM事件流模型</title>
+  <meta property="og:title" content="DOM事件流模型" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="DOM(文档对象模型)结构是一个树型结构，当一个 HTML 元素产生一个事件时，该事件会在元素节点与根结点之间的路径传播，路径所经过的结点都会收到该事件，这个传播过程可称为 DOM 事件流。
+冒泡事件流 当事件在某一元素节点被触发时，事件会跟随该节点的各个父元素节点冒泡穿过，直到找到拥有该事件的处理节点。即 button &amp;gt; p &amp;gt; div &amp;gt; body &amp;gt; html &amp;gt; document
+捕获事件流 当事件在某一元素节点被触发时，事件会先从最外层父元素节点向里捕获，直到找到拥有该事件的处理节点。即 document &amp;gt; html &amp;gt; body &amp;gt; div &amp;gt; p &amp;gt; button
+DOM 事件流模型 DOM 事件流分为 3 个阶段：
+ 捕获阶段：事件从 Document 节点自上而下向目标节点传播的阶段； 目标阶段：真正的目标节点正在处理事件的阶段； 冒泡阶段：事件从目标节点自下而上向 Document 节点传播的阶段。  " />
+  <meta name="description" content="DOM(文档对象模型)结构是一个树型结构，当一个 HTML 元素产生一个事件时，该事件会在元素节点与根结点之间的路径传播，路径所经过的结点都会收到该事件，这个传播过程可称为 DOM 事件流。
+冒泡事件流 当事件在某一元素节点被触发时，事件会跟随该节点的各个父元素节点冒泡穿过，直到找到拥有该事件的处理节点。即 button &amp;gt; p &amp;gt; div &amp;gt; body &amp;gt; html &amp;gt; document
+捕获事件流 当事件在某一元素节点被触发时，事件会先从最外层父元素节点向里捕获，直到找到拥有该事件的处理节点。即 document &amp;gt; html &amp;gt; body &amp;gt; div &amp;gt; p &amp;gt; button
+DOM 事件流模型 DOM 事件流分为 3 个阶段：
+ 捕获阶段：事件从 Document 节点自上而下向目标节点传播的阶段； 目标阶段：真正的目标节点正在处理事件的阶段； 冒泡阶段：事件从目标节点自下而上向 Document 节点传播的阶段。  " />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +73,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,185 +94,63 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-15 00:00:00 UTC">Jul 15</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/dom/">DOM事件流模型</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-14 00:00:00 UTC">Jul 14</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/jquery/">jQuery的基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-04/">JS数组基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-05/">JS函数的执行时机</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-02/">JS的数据类型</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-01/">JS的基本语法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-03/">JS对象基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-11 00:00:00 UTC">Jul 11</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-born/">JavaScript 的诞生</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">DOM事件流模型</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-15 00:00:00 UTC">
+                15 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>DOM(文档对象模型)结构是一个树型结构，当一个 HTML 元素产生一个事件时，该事件会在元素节点与根结点之间的路径传播，路径所经过的结点都会收到该事件，这个传播过程可称为 DOM 事件流。</p>
+<h2 id="冒泡事件流">冒泡事件流</h2>
+<p>当事件在某一元素节点被触发时，事件会跟随该节点的各个父元素节点冒泡穿过，直到找到拥有该事件的处理节点。即 button &gt; p &gt; div &gt; body &gt; html &gt; document</p>
+<h2 id="捕获事件流">捕获事件流</h2>
+<p>当事件在某一元素节点被触发时，事件会先从最外层父元素节点向里捕获，直到找到拥有该事件的处理节点。即 document &gt; html &gt; body &gt; div &gt; p &gt; button</p>
+<h2 id="dom-事件流模型">DOM 事件流模型</h2>
+<p>DOM 事件流分为 3 个阶段：</p>
+<ol>
+<li>捕获阶段：事件从 Document 节点自上而下向目标节点传播的阶段；</li>
+<li>目标阶段：真正的目标节点正在处理事件的阶段；</li>
+<li>冒泡阶段：事件从目标节点自下而上向 Document 节点传播的阶段。</li>
+</ol>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -283,6 +170,8 @@
     
   
 </script>
+
+  
 
 </body>
 
