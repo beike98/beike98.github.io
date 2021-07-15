@@ -6,7 +6,19 @@
     <description>Recent content in Posts on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 13 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jQuery的基本用法</title>
+      <link>https://www.liubeike.com/posts/js-06/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/js-06/</guid>
+      <description>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。
+jQuery 如何获取元素 $(&amp;#34;*&amp;#34;); //选择所有元素 $(&amp;#34;#lastname&amp;#34;); //选择id=&amp;#34;lastname&amp;#34; 的元素 $(&amp;#34;.intro&amp;#34;); //选择class=&amp;#34;intro&amp;#34; 的所有元素 $(&amp;#34;.intro,.demo&amp;#34;); //选择class 为 &amp;#34;intro&amp;#34; 或 &amp;#34;demo&amp;#34; 的所有元素 $(&amp;#34;p&amp;#34;); //选择所有 &amp;lt;p&amp;gt; 元素 $(&amp;#34;h1,div,p&amp;#34;); //选择所有 &amp;lt;h1&amp;gt;、&amp;lt;div&amp;gt; 和 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:first&amp;#34;); //选择第一个 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:last&amp;#34;); //选择最后一个 &amp;lt;p&amp;gt; 元素 jQuery 的链式操作是怎样的 jQuery 最令人称道、最方便的特点，就是选中某一页面元素后，可以直接对其操作，例如：
+$(&amp;#34;div&amp;#34;) //找到div元素  .find(&amp;#34;h3&amp;#34;) //选择其中的h3元素  .eq(2) //选择第3个h3元素  .html(&amp;#34;Hello&amp;#34;); //将它的内容改为Hello 它的原理在于每一步的 jQuery 操作，返回的都是一个 jQuery 对象，所以不同操作可以连在一起。
+jQuery 如何创建元素 $(&amp;#34;p&amp;#34;).append(&amp;#34;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&amp;#34;); //在被选元素的结尾插入内容 $(&amp;#34;p&amp;#34;).prepend(&amp;#34;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&amp;#34;); //在被选元素的开头插入内容 jQuery 如何移动元素 一共有四对方法，分别是：</description>
+    </item>
+    
     <item>
       <title>JS函数的执行时机</title>
       <link>https://www.liubeike.com/posts/js-05/</link>
@@ -138,7 +150,7 @@ border 调试法 怀疑某个元素有问题，就给这个元素加 border。 b
       <guid>https://www.liubeike.com/posts/html/</guid>
       <description>超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
 HTML 是谁发明的 蒂姆·伯纳斯-李（英语：Tim Berners-Lee），英国计算机科学家。他是万维网的发明者。1990 年 12 月 25 日，他成功利用互联网实现了超文本传输协议客户端与服务器的第一次通讯。
-HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 常用的表章节的标签有哪些  标题 h1~h6 章节 section 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  全局属性有哪些  class 添加类名，可以加多个，以空格隔开。 contenteditable 用户可以直接在网页编辑元素 hidden 隐藏属性 id 尽量不用 style 设置样式 tabindex 控制 tab 键选中顺序 title 设置鼠标放上去提示文字  常用的内容标签有哪些  ol+li 有序列表 ul+li 无序列表 dl+dt+dd 表格+表头+表内容 pre 保留原始内容 hr 水平线 br 换行符 a 超链接 一般加 target=&amp;quot;_blank&amp;quot; em 强调语气 斜体 strong 强调内容 粗体 code 包裹的内容 字体等宽 quote 行内引用 blockquote 块内引用  重点标签 a 超链接  href 跳转到某个链接 href=#id 伪协议：javascript:;; mailto:邮箱 tel:手机号 target 指定使用哪个窗口打开，一般国内用_blank 使用新的标签打开  table 表格  table 表格根、thead 头部、tbody 身体、tfoot 尾部 tr 表行、td 表数据、th 表头 table 样式： table-layout:auto;//控制表格布局 border-collapse:collapse; //控制边框是否合并 border-spacing:0;//控制边框距离  img 发出一个 get 请求，展示一张图片  alt 加载失败后显示的内容 width、height 设置宽和高，只设置一个可以按比例自适应。 src 图片地址 加载成功可触发 onload 事件，失败可触发 onerror 事件。 响应式样式可设置 max-width:100%  典型的可替换元素有   典型的可替换元素有 img、object、video 和 表单元素，如 textarea、input。</description>
+HTML 起手应该写什么 &amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34; /&amp;gt; &amp;lt;meta http-equiv=&amp;#34;X-UA-Compatible&amp;#34; content=&amp;#34;IE=edge&amp;#34; /&amp;gt; &amp;lt;meta name=&amp;#34;viewport&amp;#34; content=&amp;#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no&amp;#34; /&amp;gt; &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;&amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; 常用的表章节的标签有哪些  标题 h1~h6 章节 section 段落 p 头部 header 脚部 footer 主要内容 main 旁支内容 aside 划分 div  全局属性有哪些  class 添加类名，可以加多个，以空格隔开。 contenteditable 用户可以直接在网页编辑元素 hidden 隐藏属性 id 尽量不用 style 设置样式 tabindex 控制 tab 键选中顺序 title 设置鼠标放上去提示文字  常用的内容标签有哪些  ol+li 有序列表 ul+li 无序列表 dl+dt+dd 表格+表头+表内容 pre 保留原始内容 hr 水平线 br 换行符 a 超链接 一般加 target=&amp;quot;_blank&amp;quot; em 强调语气 斜体 strong 强调内容 粗体 code 包裹的内容 字体等宽 quote 行内引用 blockquote 块内引用  重点标签 a 超链接  href 跳转到某个链接 href=#id 伪协议：javascript:; mailto:邮箱 tel:手机号 target 指定使用哪个窗口打开，一般国内用_blank 使用新的标签打开  table 表格  table 表格根、thead 头部、tbody 身体、tfoot 尾部 tr 表行、td 表数据、th 表头 table 样式： table-layout:auto;//控制表格布局 border-collapse:collapse; //控制边框是否合并 border-spacing:0;//控制边框距离  img 发出一个 get 请求，展示一张图片  alt 加载失败后显示的内容 width、height 设置宽和高，只设置一个可以按比例自适应。 src 图片地址 加载成功可触发 onload 事件，失败可触发 onerror 事件。 响应式样式可设置 max-width:100%  典型的可替换元素有   典型的可替换元素有 img、object、video 和 表单元素，如 textarea、input。</description>
     </item>
     
   </channel>
