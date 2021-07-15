@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/posts/" />
-  <link rel="canonical" href="https://www.liubeike.com/posts/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/jquery/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/jquery/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -19,9 +19,9 @@
            "@id": "https:\/\/www.liubeike.com"
       },
       "articleSection" : "posts",
-      "name" : "Posts",
-      "headline" : "Posts",
-      "description" : "",
+      "name" : "jQuery的基本用法",
+      "headline" : "jQuery的基本用法",
+      "description" : "jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。\njQuery 如何获取元素 $(\u0026#34;*\u0026#34;); \/\/选择所有元素 $(\u0026#34;#lastname\u0026#34;); \/\/选择id=\u0026#34;lastname\u0026#34; 的元素 $(\u0026#34;.intro\u0026#34;); \/\/选择class=\u0026#34;intro\u0026#34; 的所有元素 $(\u0026#34;.intro,.demo\u0026#34;); \/\/选择class 为 \u0026#34;intro\u0026#34; 或 \u0026#34;demo\u0026#34; 的所有元素 $(\u0026#34;p\u0026#34;); \/\/选择所有 \u0026lt;p\u0026gt; 元素 $(\u0026#34;h1,div,p\u0026#34;); \/\/选择所有 \u0026lt;h1\u0026gt;、\u0026lt;div\u0026gt; 和 \u0026lt;p\u0026gt; 元素 $(\u0026#34;p:first\u0026#34;); \/\/选择第一个 \u0026lt;p\u0026gt; 元素 $(\u0026#34;p:last\u0026#34;); \/\/选择最后一个 \u0026lt;p\u0026gt; 元素 jQuery 的链式操作是怎样的 jQuery 最令人称道、最方便的特点，就是选中某一页面元素后，可以直接对其操作，例如：\n$(\u0026#34;div\u0026#34;) \/\/找到div元素  .find(\u0026#34;h3\u0026#34;) \/\/选择其中的h3元素  .eq(2) \/\/选择第3个h3元素  .html(\u0026#34;Hello\u0026#34;); \/\/将它的内容改为Hello 它的原理在于每一步的 jQuery 操作，返回的都是一个 jQuery 对象，所以不同操作可以连在一起。\njQuery 如何创建元素 $(\u0026#34;p\u0026#34;).append(\u0026#34;\u0026lt;p\u0026gt;Hello\u0026lt;\/p\u0026gt;\u0026#34;); \/\/在被选元素的结尾插入内容 $(\u0026#34;p\u0026#34;).prepend(\u0026#34;\u0026lt;p\u0026gt;Hello\u0026lt;\/p\u0026gt;\u0026#34;); \/\/在被选元素的开头插入内容 jQuery 如何移动元素 一共有四对方法，分别是：",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,21 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-14 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-14 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/posts\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/jquery\/",
       "keywords" : [  ]
   }
 </script>
-<title>Posts</title>
-  <meta property="og:title" content="Posts" />
+<title>jQuery的基本用法</title>
+  <meta property="og:title" content="jQuery的基本用法" />
   <meta property="og:type" content="article" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+  <meta property="og:description" content="jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。
+jQuery 如何获取元素 $(&amp;#34;*&amp;#34;); //选择所有元素 $(&amp;#34;#lastname&amp;#34;); //选择id=&amp;#34;lastname&amp;#34; 的元素 $(&amp;#34;.intro&amp;#34;); //选择class=&amp;#34;intro&amp;#34; 的所有元素 $(&amp;#34;.intro,.demo&amp;#34;); //选择class 为 &amp;#34;intro&amp;#34; 或 &amp;#34;demo&amp;#34; 的所有元素 $(&amp;#34;p&amp;#34;); //选择所有 &amp;lt;p&amp;gt; 元素 $(&amp;#34;h1,div,p&amp;#34;); //选择所有 &amp;lt;h1&amp;gt;、&amp;lt;div&amp;gt; 和 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:first&amp;#34;); //选择第一个 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:last&amp;#34;); //选择最后一个 &amp;lt;p&amp;gt; 元素 jQuery 的链式操作是怎样的 jQuery 最令人称道、最方便的特点，就是选中某一页面元素后，可以直接对其操作，例如：
+$(&amp;#34;div&amp;#34;) //找到div元素  .find(&amp;#34;h3&amp;#34;) //选择其中的h3元素  .eq(2) //选择第3个h3元素  .html(&amp;#34;Hello&amp;#34;); //将它的内容改为Hello 它的原理在于每一步的 jQuery 操作，返回的都是一个 jQuery 对象，所以不同操作可以连在一起。
+jQuery 如何创建元素 $(&amp;#34;p&amp;#34;).append(&amp;#34;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&amp;#34;); //在被选元素的结尾插入内容 $(&amp;#34;p&amp;#34;).prepend(&amp;#34;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&amp;#34;); //在被选元素的开头插入内容 jQuery 如何移动元素 一共有四对方法，分别是：" />
+  <meta name="description" content="jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。
+jQuery 如何获取元素 $(&amp;#34;*&amp;#34;); //选择所有元素 $(&amp;#34;#lastname&amp;#34;); //选择id=&amp;#34;lastname&amp;#34; 的元素 $(&amp;#34;.intro&amp;#34;); //选择class=&amp;#34;intro&amp;#34; 的所有元素 $(&amp;#34;.intro,.demo&amp;#34;); //选择class 为 &amp;#34;intro&amp;#34; 或 &amp;#34;demo&amp;#34; 的所有元素 $(&amp;#34;p&amp;#34;); //选择所有 &amp;lt;p&amp;gt; 元素 $(&amp;#34;h1,div,p&amp;#34;); //选择所有 &amp;lt;h1&amp;gt;、&amp;lt;div&amp;gt; 和 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:first&amp;#34;); //选择第一个 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:last&amp;#34;); //选择最后一个 &amp;lt;p&amp;gt; 元素 jQuery 的链式操作是怎样的 jQuery 最令人称道、最方便的特点，就是选中某一页面元素后，可以直接对其操作，例如：
+$(&amp;#34;div&amp;#34;) //找到div元素  .find(&amp;#34;h3&amp;#34;) //选择其中的h3元素  .eq(2) //选择第3个h3元素  .html(&amp;#34;Hello&amp;#34;); //将它的内容改为Hello 它的原理在于每一步的 jQuery 操作，返回的都是一个 jQuery 对象，所以不同操作可以连在一起。
+jQuery 如何创建元素 $(&amp;#34;p&amp;#34;).append(&amp;#34;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&amp;#34;); //在被选元素的结尾插入内容 $(&amp;#34;p&amp;#34;).prepend(&amp;#34;&amp;lt;p&amp;gt;Hello&amp;lt;/p&amp;gt;&amp;#34;); //在被选元素的开头插入内容 jQuery 如何移动元素 一共有四对方法，分别是：" />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +71,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,172 +92,88 @@
 </div>
 <div class="header-line"></div>
 
-
-        <h1 class="taxonomy-term"></h1>
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-14 00:00:00 UTC">Jul 14</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/jquery/">jQuery的基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-04/">JS数组基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-05/">JS函数的执行时机</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-02/">JS的数据类型</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-01/">JS的基本语法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-03/">JS对象基本用法</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-11 00:00:00 UTC">Jul 11</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/js-born/">JavaScript 的诞生</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-10">
-                <div class="row">
-                  <div class="col-xs-12">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">jQuery的基本用法</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-14 00:00:00 UTC">
+                14 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <p>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。</p>
+<h2 id="jquery-如何获取元素">jQuery 如何获取元素</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">$(<span style="font-style:italic">&#34;*&#34;</span>); <span style="font-style:italic">//选择所有元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;#lastname&#34;</span>); <span style="font-style:italic">//选择id=&#34;lastname&#34; 的元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;.intro&#34;</span>); <span style="font-style:italic">//选择class=&#34;intro&#34; 的所有元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;.intro,.demo&#34;</span>); <span style="font-style:italic">//选择class 为 &#34;intro&#34; 或 &#34;demo&#34; 的所有元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;p&#34;</span>); <span style="font-style:italic">//选择所有 &lt;p&gt; 元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;h1,div,p&#34;</span>); <span style="font-style:italic">//选择所有 &lt;h1&gt;、&lt;div&gt; 和 &lt;p&gt; 元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;p:first&#34;</span>); <span style="font-style:italic">//选择第一个 &lt;p&gt; 元素
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;p:last&#34;</span>); <span style="font-style:italic">//选择最后一个 &lt;p&gt; 元素
+</span></code></pre></div><h2 id="jquery-的链式操作是怎样的">jQuery 的链式操作是怎样的</h2>
+<p>jQuery 最令人称道、最方便的特点，就是选中某一页面元素后，可以直接对其操作，例如：</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">$(<span style="font-style:italic">&#34;div&#34;</span>) <span style="font-style:italic">//找到div元素
+</span><span style="font-style:italic"></span>  .find(<span style="font-style:italic">&#34;h3&#34;</span>) <span style="font-style:italic">//选择其中的h3元素
+</span><span style="font-style:italic"></span>  .eq(2) <span style="font-style:italic">//选择第3个h3元素
+</span><span style="font-style:italic"></span>  .html(<span style="font-style:italic">&#34;Hello&#34;</span>); <span style="font-style:italic">//将它的内容改为Hello
+</span></code></pre></div><p>它的原理在于每一步的 jQuery 操作，返回的都是一个 jQuery 对象，所以不同操作可以连在一起。</p>
+<h2 id="jquery-如何创建元素">jQuery 如何创建元素</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">$(<span style="font-style:italic">&#34;p&#34;</span>).append(<span style="font-style:italic">&#34;&lt;p&gt;Hello&lt;/p&gt;&#34;</span>); <span style="font-style:italic">//在被选元素的结尾插入内容
+</span><span style="font-style:italic"></span>$(<span style="font-style:italic">&#34;p&#34;</span>).prepend(<span style="font-style:italic">&#34;&lt;p&gt;Hello&lt;/p&gt;&#34;</span>); <span style="font-style:italic">//在被选元素的开头插入内容
+</span></code></pre></div><h2 id="jquery-如何移动元素">jQuery 如何移动元素</h2>
+<p>一共有四对方法，分别是：</p>
+<ol>
+<li>.insertAfter()和.after()在现存元素的外部，从后面插入元素</li>
+<li>.insertBefore()和.before()：在现存元素的外部，从前面插入元素</li>
+<li>.appendTo()和.append()：在现存元素的内部，从后面插入元素</li>
+<li>.prependTo()和.prepend()：在现存元素的内部，从前面插入元素</li>
+</ol>
+<h2 id="jquery-如何修改元素的属性">jQuery 如何修改元素的属性</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript">addClass(); <span style="font-style:italic">//向匹配的元素添加指定的类名。
+</span><span style="font-style:italic"></span>attr(); <span style="font-style:italic">//设置或返回匹配元素的属性和值。
+</span><span style="font-style:italic"></span>hasClass(); <span style="font-style:italic">//检查匹配的元素是否拥有指定的类。
+</span><span style="font-style:italic"></span>html(); <span style="font-style:italic">//设置或返回匹配的元素集合中的 HTML 内容。
+</span><span style="font-style:italic"></span>removeAttr(); <span style="font-style:italic">//从所有匹配的元素中移除指定的属性。
+</span><span style="font-style:italic"></span>removeClass(); <span style="font-style:italic">//从所有匹配的元素中删除全部或者指定的类。
+</span><span style="font-style:italic"></span>toggleClass(); <span style="font-style:italic">//从匹配的元素中添加或删除一个类。
+</span><span style="font-style:italic"></span>val(); <span style="font-style:italic">//设置或返回匹配元素的值。
+</span></code></pre></div>
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -270,6 +193,8 @@
     
   
 </script>
+
+  
 
 </body>
 

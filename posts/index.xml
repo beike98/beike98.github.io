@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>jQuery的基本用法</title>
-      <link>https://www.liubeike.com/posts/js-06/</link>
+      <link>https://www.liubeike.com/posts/jquery/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.liubeike.com/posts/js-06/</guid>
+      <guid>https://www.liubeike.com/posts/jquery/</guid>
       <description>jQuery 是一个高效、精简并且功能丰富的 JavaScript 工具库。它提供的 API 易于使用且兼容众多浏览器，这让诸如 HTML 文档遍历和操作、事件处理、动画和 Ajax 操作更加简单。
 jQuery 如何获取元素 $(&amp;#34;*&amp;#34;); //选择所有元素 $(&amp;#34;#lastname&amp;#34;); //选择id=&amp;#34;lastname&amp;#34; 的元素 $(&amp;#34;.intro&amp;#34;); //选择class=&amp;#34;intro&amp;#34; 的所有元素 $(&amp;#34;.intro,.demo&amp;#34;); //选择class 为 &amp;#34;intro&amp;#34; 或 &amp;#34;demo&amp;#34; 的所有元素 $(&amp;#34;p&amp;#34;); //选择所有 &amp;lt;p&amp;gt; 元素 $(&amp;#34;h1,div,p&amp;#34;); //选择所有 &amp;lt;h1&amp;gt;、&amp;lt;div&amp;gt; 和 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:first&amp;#34;); //选择第一个 &amp;lt;p&amp;gt; 元素 $(&amp;#34;p:last&amp;#34;); //选择最后一个 &amp;lt;p&amp;gt; 元素 jQuery 的链式操作是怎样的 jQuery 最令人称道、最方便的特点，就是选中某一页面元素后，可以直接对其操作，例如：
 $(&amp;#34;div&amp;#34;) //找到div元素  .find(&amp;#34;h3&amp;#34;) //选择其中的h3元素  .eq(2) //选择第3个h3元素  .html(&amp;#34;Hello&amp;#34;); //将它的内容改为Hello 它的原理在于每一步的 jQuery 操作，返回的都是一个 jQuery 对象，所以不同操作可以连在一起。
