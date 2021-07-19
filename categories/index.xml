@@ -6,7 +6,16 @@
     <description>Recent content in Categories on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MVC</title>
+      <link>https://www.liubeike.com/categories/mvc/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/categories/mvc/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>DOM</title>
       <link>https://www.liubeike.com/categories/dom/</link>

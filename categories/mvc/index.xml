@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MVC on 刘蓓科的个人博客</title>
+    <link>https://www.liubeike.com/categories/mvc/</link>
+    <description>Recent content in MVC on 刘蓓科的个人博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Mon, 19 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/categories/mvc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>浅析 MVC</title>
+      <link>https://www.liubeike.com/posts/mvc/</link>
+      <pubDate>Mon, 19 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/mvc/</guid>
+      <description>MVC 三个对象分别做什么？ MVC(Model View Controller),分别是 模型（数据）、视图（页面）、控制器（业务逻辑）。
+// 数据相关的整合进 M const M = { data: {}, create() {}, delete() {}, update(data) {}, get() {}, }; // 视图相关放到 V const V = { el: null, html: ` &amp;lt;div class=&amp;#34;html&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; `, init() {}, render() {}, }; // 业务逻辑放到 C const C = { init() {}, events: { &amp;#34;click #add1&amp;#34;: &amp;#34;add&amp;#34;, &amp;#34;click #minus1&amp;#34;: &amp;#34;minus&amp;#34;, &amp;#34;click #mul2&amp;#34;: &amp;#34;mul&amp;#34;, &amp;#34;click #divide2&amp;#34;: &amp;#34;div&amp;#34;, }, add() {}, minus() {}, mul() {}, div() {}, autoBindEvents() { for (let key in C.</description>
+    </item>
+    
+  </channel>
+</rss>
