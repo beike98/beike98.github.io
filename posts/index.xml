@@ -6,7 +6,17 @@
     <description>Recent content in Posts on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Mon, 19 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue起步</title>
+      <link>https://www.liubeike.com/posts/vue-01/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/vue-01/</guid>
+      <description>两个版本对应的文件名  vue.js 完整版本 vue.runtime.js 运行时版本  最佳实践：总是使用非完整版，然后配合 vue-loader 和 vue 文件
+template 和 render 怎么用 //在vue文件中以template标签创建HTML &amp;lt;template&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;Vue logo&amp;#34; src=&amp;#34;./assets/logo.png&amp;#34; /&amp;gt; &amp;lt;HelloWorld msg=&amp;#34;Welcome&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt;; //在js中以render函数渲染元素 import App from &amp;#34;./App.vue&amp;#34;; new Vue({ render: (h) =&amp;gt; h(App), }).$mount(&amp;#34;#app&amp;#34;); 如何用 codesandbox.io 写 Vue 代码  进入codesandbox.io 不要登陆，免费创建一个沙盒（登陆后将限制创建次数） 选择 vue 模板  </description>
+    </item>
+    
     <item>
       <title>浅析 MVC</title>
       <link>https://www.liubeike.com/posts/mvc/</link>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" prefix="og: http://ogp.me/ns#">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="generator" content="Hugo 0.85.0" />
@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="" />
-  <meta property="og:url" content="https://www.liubeike.com/" />
-  <link rel="canonical" href="https://www.liubeike.com/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
+  <meta property="og:url" content="https://www.liubeike.com/posts/vue-01/" />
+  <link rel="canonical" href="https://www.liubeike.com/posts/vue-01/" /><link rel="alternate" type="application/atom+xml" href="https://www.liubeike.comindex.xml" title="刘蓓科的个人博客">
 
   <script type="application/ld+json">
   {
@@ -18,10 +18,10 @@
            "@type": "WebPage",
            "@id": "https:\/\/www.liubeike.com"
       },
-      "articleSection" : "",
-      "name" : "刘蓓科的个人博客",
-      "headline" : "刘蓓科的个人博客",
-      "description" : "",
+      "articleSection" : "posts",
+      "name" : "Vue起步",
+      "headline" : "Vue起步",
+      "description" : "两个版本对应的文件名  vue.js 完整版本 vue.runtime.js 运行时版本  最佳实践：总是使用非完整版，然后配合 vue-loader 和 vue 文件\ntemplate 和 render 怎么用 \/\/在vue文件中以template标签创建HTML \u0026lt;template\u0026gt; \u0026lt;div id=\u0026#34;app\u0026#34;\u0026gt; \u0026lt;img alt=\u0026#34;Vue logo\u0026#34; src=\u0026#34;.\/assets\/logo.png\u0026#34; \/\u0026gt; \u0026lt;HelloWorld msg=\u0026#34;Welcome\u0026#34; \/\u0026gt; \u0026lt;\/div\u0026gt; \u0026lt;\/template\u0026gt;; \/\/在js中以render函数渲染元素 import App from \u0026#34;.\/App.vue\u0026#34;; new Vue({ render: (h) =\u0026gt; h(App), }).$mount(\u0026#34;#app\u0026#34;); 如何用 codesandbox.io 写 Vue 代码  进入codesandbox.io 不要登陆，免费创建一个沙盒（登陆后将限制创建次数） 选择 vue 模板  ",
       "inLanguage" : "en-US",
       "author" : "",
       "creator" : "",
@@ -31,15 +31,17 @@
       "copyrightYear" : "2021",
       "datePublished": "2021-07-20 00:00:00 \u002b0000 UTC",
       "dateModified" : "2021-07-20 00:00:00 \u002b0000 UTC",
-      "url" : "https:\/\/www.liubeike.com\/",
+      "url" : "https:\/\/www.liubeike.com\/posts\/vue-01\/",
       "keywords" : [  ]
   }
 </script>
-<title>刘蓓科的个人博客</title>
-  <meta property="og:title" content="刘蓓科的个人博客" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="" />
-  <meta name="description" content="" />
+<title>Vue起步</title>
+  <meta property="og:title" content="Vue起步" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="两个版本对应的文件名  vue.js 完整版本 vue.runtime.js 运行时版本  最佳实践：总是使用非完整版，然后配合 vue-loader 和 vue 文件
+template 和 render 怎么用 //在vue文件中以template标签创建HTML &amp;lt;template&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;Vue logo&amp;#34; src=&amp;#34;./assets/logo.png&amp;#34; /&amp;gt; &amp;lt;HelloWorld msg=&amp;#34;Welcome&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt;; //在js中以render函数渲染元素 import App from &amp;#34;./App.vue&amp;#34;; new Vue({ render: (h) =&amp;gt; h(App), }).$mount(&amp;#34;#app&amp;#34;); 如何用 codesandbox.io 写 Vue 代码  进入codesandbox.io 不要登陆，免费创建一个沙盒（登陆后将限制创建次数） 选择 vue 模板  " />
+  <meta name="description" content="两个版本对应的文件名  vue.js 完整版本 vue.runtime.js 运行时版本  最佳实践：总是使用非完整版，然后配合 vue-loader 和 vue 文件
+template 和 render 怎么用 //在vue文件中以template标签创建HTML &amp;lt;template&amp;gt; &amp;lt;div id=&amp;#34;app&amp;#34;&amp;gt; &amp;lt;img alt=&amp;#34;Vue logo&amp;#34; src=&amp;#34;./assets/logo.png&amp;#34; /&amp;gt; &amp;lt;HelloWorld msg=&amp;#34;Welcome&amp;#34; /&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/template&amp;gt;; //在js中以render函数渲染元素 import App from &amp;#34;./App.vue&amp;#34;; new Vue({ render: (h) =&amp;gt; h(App), }).$mount(&amp;#34;#app&amp;#34;); 如何用 codesandbox.io 写 Vue 代码  进入codesandbox.io 不要登陆，免费创建一个沙盒（登陆后将限制创建次数） 选择 vue 模板  " />
   <meta property="og:locale" content="zh-CN" />
 
   
@@ -65,10 +67,11 @@
 
 
 <body>
-  <article class="posts">
+  <article class="post Chinese" id="article">
     <div class="row">
       <div class="col-xs-12">
-        
+        <div class="site-header">
+          
 <header>
   <div class="header-title">
     <a href="/"
@@ -85,314 +88,76 @@
 </div>
 <div class="header-line"></div>
 
-        <div id="posts-list">
-          <section>
-            <h1 class="site-date-catalog">2021</h1>
-
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-20 00:00:00 UTC">Jul 20</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/vue-01/">Vue起步</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/vue/"><strong>Vue</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-19 00:00:00 UTC">Jul 19</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/mvc/">浅析 MVC</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/mvc/"><strong>MVC</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-15 00:00:00 UTC">Jul 15</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/dom/">DOM事件和事件委托</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/dom/"><strong>DOM</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-14 00:00:00 UTC">Jul 14</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/jquery/">jQuery的基本用法</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jquery/"><strong>jQuery</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-04/">JS数组基本用法</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-13 00:00:00 UTC">Jul 13</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-05/">JS函数的执行时机</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-02/">JS的数据类型</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-01/">JS的基本语法</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-12 00:00:00 UTC">Jul 12</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-03/">JS对象基本用法</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/jacascript/"><strong>JacaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-11 00:00:00 UTC">Jul 11</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/js-born/">JavaScript 的诞生</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/javascript/"><strong>JavaScript</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-10 00:00:00 UTC">Jul 10</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/url/">浅析 URL</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/http/"><strong>http</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-03/">CSS知识总结3</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-02/">CSS知识总结2</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-09 00:00:00 UTC">Jul 09</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/css-01/">CSS知识总结1</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/css/"><strong>CSS</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="row posts-line">
-              <div class="posts-date col-xs-3 col-sm-2">
-                <time datetime="2021-07-08 00:00:00 UTC">Jul 08</time>
-              </div>
-              <div class="posts-title col-xs-9 col-sm-10">
-                <div class="row">
-                  <div class="col-xs-11 col-sm-10">
-                    <a href="/posts/html/">HTML入门</a>
-                  </div>
-                  <div class="col-xs-1 col-sm-2 posts-categories">
-                    
-                    <div class="posts-category">
-                      <a href="/categories/html/"><strong>HTML</strong></a>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </section>
-          
         </div>
+        <header class="post-header">
+          <h1 class="post-title">Vue起步</h1>
+          
+          <div class="row post-desc">
+            <div class="col-xs-6">
+              
+              <time class="post-date" datetime="2021-07-20 00:00:00 UTC">
+                20 Jul 2021
+              </time>
+              
+            </div>
+            <div class="col-xs-6">
+              
+            </div>
+          </div>
+          
+        </header>
+
+        <div class="post-content markdown-body">
+          
+          <h2 id="两个版本对应的文件名">两个版本对应的文件名</h2>
+<ul>
+<li>vue.js 完整版本</li>
+<li>vue.runtime.js 运行时版本</li>
+</ul>
+<p>最佳实践：总是使用非完整版，然后配合 vue-loader 和 vue 文件</p>
+<h2 id="template-和-render-怎么用">template 和 render 怎么用</h2>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:2;-o-tab-size:2;tab-size:2"><code class="language-javascript" data-lang="javascript"><span style="font-style:italic">//在vue文件中以template标签创建HTML
+</span><span style="font-style:italic"></span>&lt;template&gt;
+  &lt;div id=<span style="font-style:italic">&#34;app&#34;</span>&gt;
+    &lt;img alt=<span style="font-style:italic">&#34;Vue logo&#34;</span> src=<span style="font-style:italic">&#34;./assets/logo.png&#34;</span> /&gt;
+    &lt;HelloWorld msg=<span style="font-style:italic">&#34;Welcome&#34;</span> /&gt;
+  &lt;<span style="">/div&gt;</span>
+&lt;<span style="">/template&gt;;</span>
+<span style="font-style:italic">//在js中以render函数渲染元素
+</span><span style="font-style:italic"></span><span style="font-weight:bold">import</span> App from <span style="font-style:italic">&#34;./App.vue&#34;</span>;
+<span style="font-weight:bold">new</span> Vue({
+  render: (h) =&gt; h(App),
+}).$mount(<span style="font-style:italic">&#34;#app&#34;</span>);
+</code></pre></div><h2 id="如何用-codesandboxio-写-vue-代码">如何用 codesandbox.io 写 Vue 代码</h2>
+<ol>
+<li>进入<a href="https://codesandbox.io/">codesandbox.io</a></li>
+<li>不要登陆，免费创建一个沙盒（登陆后将限制创建次数）</li>
+<li>选择 vue 模板</li>
+</ol>
+
+        </div>
+
+        <div class="row middle-xs">
+          <div class="col-xs-12">
+            
+          </div>
+        </div>
+        
+          <div class="row">
+            <div class="col-xs-12">
+              
+            </div>
+          </div>
+
+          
+
+
+
+          
+          
+          <div style="height: 50px;"></div>
+          
+        
 
         <div class="site-footer">
   
@@ -412,6 +177,8 @@
     
   
 </script>
+
+  
 
 </body>
 
