@@ -6,7 +6,19 @@
     <description>Recent content in Posts on 刘蓓科的个人博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.liubeike.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue的.sync修饰符</title>
+      <link>https://www.liubeike.com/posts/vue-02/</link>
+      <pubDate>Sun, 25 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.liubeike.com/posts/vue-02/</guid>
+      <description>虽然Vue支持双向绑定，但不幸的是，真正的双向绑定会带来维护上的问题，因为子组件可以变更父组件，且在父组件和子组件都没有明显的变更来源。
+所以Vue规定子组件不允许直接修改props父组件的数据，需要使用$emit事件代替，语法：this.$emit(&amp;lsquo;update:Mypropdata&amp;rsquo;, newdata)。然后父组件监听子组件事件，如果触发事件，就将newdata存到变量$event，再把变量$event传给子组件。
+而Vue的.sync，它是一个语法糖，例如：
+//当子组件需要更新一个数据时，我们可以用以下方法表达对其赋新值的意图： this.$emit(&amp;#39;update:title&amp;#39;, newTitle) //然后父组件可以监听那个事件并根据需要更新一个本地的数据 property。例如： &amp;lt;text-document v-bind:title=&amp;#34;doc.title&amp;#34; v-on:update:title=&amp;#34;doc.title = $event&amp;#34; &amp;gt;&amp;lt;/text-document&amp;gt; //语法糖版,即 使用 .sync 修饰符 &amp;lt;text-document v-bind:title.sync=&amp;#34;doc.title&amp;#34;&amp;gt;&amp;lt;/text-document&amp;gt; </description>
+    </item>
+    
     <item>
       <title>Vue起步</title>
       <link>https://www.liubeike.com/posts/vue-01/</link>
